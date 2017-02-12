@@ -1,5 +1,5 @@
-# The-Cove
+#The-Cove
 
-#Repository of front-end development theme files for The Cove.
+#Front-end development theme files for The Cove.
 
-#wwww.cove.org.au
+#www.cove.org.au
