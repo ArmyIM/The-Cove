@@ -50,4 +50,35 @@ $(function() {
     $('html, body').animate({scrollTop : 0 }, 600);
     event.preventDefault();
   });
+
+
+   $(".searchandfilter li").each(function(i) {
+    $(this).addClass("item" + (i+1));
+
+  });
+
 });
+
+
+var select=document.getElementById('ofcategory');
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='1') {
+     select.remove(i);
+   }
+}
+
+
+
+
+$('.search-nav a').on('click', function (event) {
+    $(this).parent().toggleClass("open");
+});
+
+$('body').on('click', function (e) {
+    if (!$('search-nav').is(e.target) && $('search-nav').has(e.target).length === 0 && $('.open').has(e.target).length === 0) {
+        $('search-nav').removeClass('open');
+    }
+});
+
+
