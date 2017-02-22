@@ -1,3 +1,0 @@
-username: superadmin
-
-password: Ty847GwOSUUF3va
